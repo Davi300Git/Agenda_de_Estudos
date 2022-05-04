@@ -1,0 +1,32 @@
+.botao {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #88bcd1;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 4px #0000009F;
+          box-shadow: 2px 4px 4px #0000009F;
+  color: #272626;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 16px;
+  width: 150px;
+}
+
+.botao:active {
+  background-color: #7CA6B7;
+  -webkit-box-shadow: 2px 2px 4px #0000009F inset;
+          box-shadow: 2px 2px 4px #0000009F inset;
+}
+
+@media screen and (min-width: 1280px) {
+  .botao {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 200px;
+    font-size: 2.25rem;
+  }
+}
+/*# sourceMappingURL=Botao.module.css.map */

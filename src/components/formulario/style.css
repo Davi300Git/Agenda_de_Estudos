@@ -1,0 +1,91 @@
+.novaTarefa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-area: nova-tarefa;
+  background-color: #7687A1;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 4px #0000009F;
+          box-shadow: 2px 4px 4px #0000009F;
+  padding: 12px;
+}
+
+.novaTarefa .inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.novaTarefa .inputContainer label {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.novaTarefa .inputContainer input {
+  width: 100%;
+  padding: 8px 12px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: unset;
+  border-radius: 5px;
+  background-color: #5D677C;
+  -webkit-box-shadow: 0px 2px 4px #2D2B2B9F inset;
+          box-shadow: 0px 2px 4px #2D2B2B9F inset;
+}
+
+.novaTarefa .inputContainer input::-webkit-input-placeholder {
+  color: #BFBFBF;
+}
+
+.novaTarefa .inputContainer input:-ms-input-placeholder {
+  color: #BFBFBF;
+}
+
+.novaTarefa .inputContainer input::-ms-input-placeholder {
+  color: #BFBFBF;
+}
+
+.novaTarefa .inputContainer input::placeholder {
+  color: #BFBFBF;
+}
+
+@media screen and (min-width: 1280px) {
+  .novaTarefa {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 2.25rem;
+    padding: 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .novaTarefa .inputContainer {
+    width: calc(60% - 12px);
+  }
+  .novaTarefa .inputContainer:last-of-type {
+    width: 40%;
+  }
+  .novaTarefa .inputContainer label {
+    font-size: 2rem;
+  }
+  .novaTarefa .inputContainer input {
+    height: 100%;
+    font-size: 1.75rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

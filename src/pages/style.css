@@ -1,0 +1,37 @@
+.AppStyle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content min-content auto;
+      grid-template-rows: -webkit-min-content -webkit-min-content auto;
+      grid-template-rows: min-content min-content auto;
+      grid-template-areas: "nova-tarefa" "cronometro" "tarefas";
+  row-gap: 24px;
+  min-width: 320px;
+  min-height: calc(100vh - 32px);
+  width: 100%;
+  padding: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #171717;
+}
+
+@media screen and (min-width: 1280px) {
+  .AppStyle {
+        grid-template-areas: "nova-tarefa tarefas" "cronometro tarefas";
+    -webkit-column-gap: 64px;
+            column-gap: 64px;
+    -ms-grid-rows: min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
+    -ms-grid-columns: 750px 300px;
+        grid-template-columns: 750px 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 64px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
